@@ -2,6 +2,9 @@ import React, { createContext, useContext, useEffect, useState } from 'react';
 import { supabase, isSupabaseConfigured } from '../lib/supabase';
 import { User } from '../types';
 
+console.log("AuthContext loaded!");
+
+
 interface AuthContextType {
   user: User | null;
   loading: boolean;
